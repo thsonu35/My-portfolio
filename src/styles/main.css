@@ -1,0 +1,144 @@
+/* Define default colors */
+:root {
+    --bg-color: #fff; /* Default light background */
+    --text-color: #000; /* Default text color */
+    --heading-color: #000; /* Default heading color */
+    --button-bg-color: #333; /* Default button background */
+    --button-hover-color: #1abc9c; /* Default button hover color */
+  }
+  
+  /* Dark mode colors */
+  [data-theme="dark"] {
+    --bg-color: #333;
+    --text-color: #1abc9c; /* Dark blue for text */
+    --heading-color: #ff0058; /* Dark red for headings */
+    --button-bg-color: #333;
+    --button-hover-color: #1abc9c;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    background: var(--button-bg-color);
+    padding: 20px 0px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    margin: 0;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .left-nav {
+    flex: 1;
+    justify-content: space-evenly;
+  }
+  
+  .right-nav {
+    justify-content: flex-end;
+    gap: 15px;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: var(--heading-color);
+  }
+  
+  .section {
+    padding: 100px 20px;
+    text-align: center;
+    min-height: 100vh;
+    background: var(--bg-color);
+    transition: background 1s ease, color 1s ease;
+  }
+  
+  .section h1, .section h2, .section h3 {
+    color: var(--heading-color);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  form label {
+    margin: 10px 0 5px;
+  }
+  
+  form input,
+  form textarea {
+    margin: 5px 0 15px;
+    padding: 10px;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background-color: var(--button-bg-color);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: var(--button-hover-color);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .section {
+      padding: 80px 20px;
+    }
+  }
+  
+
+  /* src/styles/main.css */
+#dark-mode-toggle {
+    padding: 10px 20px;
+    background-color: #1abc9c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease;
+  }
+  
+  #dark-mode-toggle:hover {
+    background-color: #16a085;
+  }
+  
