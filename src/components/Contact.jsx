@@ -35,7 +35,7 @@ const Contact = () => {
       'service_2zj4gmj',  // Replace with your service ID
       'template_aprqzue', // Replace with your main template ID
       formData,
-      'your_public_key'   // Replace with your Public Key
+      'hHes5PjkJNLaf3qWt'   // Replace with your Public Key
     ).then(
       (result) => {
         console.log('Email successfully sent!', result.text);
@@ -44,7 +44,7 @@ const Contact = () => {
         // Send the auto-reply email
         emailjs.send(
           'service_2zj4gmj',  // Replace with your service ID
-          'template_auto789', // Replace with your auto-reply template ID
+          'template_znv3dt9', // Replace with your auto-reply template ID
           {
             name: formData.name,
             email: formData.email,
