@@ -1,64 +1,139 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Element } from 'react-scroll';
+import Typewriter from 'typewriter-effect';
 import './Projects.css'; // Import specific CSS for Projects
 
 const projects = [
-  { title: 'My-Calculator', description: 'An Micro Project of "calculator" code by html, css and js', imageUrl: 'https://th.bing.com/th/id/OIP.5vw4p8D5UFDL9HVGnCqe3wAAAA?rs=1&pid=ImgDetMain' },
-  { title: 'Dappr Web page', description: 'A Website that takes contact detail and show user working responsive , name dappr.', imageUrl: 'https://th.bing.com/th/id/OIP.bxsARnVtZXKaLkg-PK5S6gHaHa?w=1024&h=1024&rs=1&pid=ImgDetMain' },
-  { title: 'Pocket-Notes', description: 'This project helps to note down notes look like a chatting app.', imageUrl: 'https://th.bing.com/th/id/OIP.u1LI0kCEcS9YzlpO8GQnngHaHQ?w=554&h=543&rs=1&pid=ImgDetMain' },
-  { title: 'Pro-Manage', description: 'This is a full Stack Project with backend and frontend.', imageUrl: 'https://wallpaperaccess.com/full/8901756.jpg' },
-  { title: 'Project 5', description: 'Description of Project 5.', imageUrl: 'https://i.pinimg.com/originals/86/9b/a1/869ba19ef2e24bed77f37b42f5c7b582.jpg' },
-  { title: 'Project 6', description: 'Description of Project 6.', imageUrl: 'https://i.pinimg.com/originals/86/9b/a1/869ba19ef2e24bed77f37b42f5c7b582.jpg' },
+  {
+    title: 'My-Calculator',
+    description: 'A Micro Project of "calculator" coded by HTML, CSS, and JS',
+    imageUrl: 'https://th.bing.com/th/id/OIP.5vw4p8D5UFDL9HVGnCqe3wAAAA?rs=1&pid=ImgDetMain',
+    deployUrl: 'https://thsonu35.github.io/My-Calculater/',
+    githubUrl: 'https://github.com/thsonu35/My-Calculater'
+  },
+  {
+    title: 'Dappr Web page',
+    description: 'A Website that takes contact details and shows a working responsive design, named dappr.',
+    imageUrl: 'https://th.bing.com/th/id/OIP.bxsARnVtZXKaLkg-PK5S6gHaHa?w=1024&h=1024&rs=1&pid=ImgDetMain',
+    deployUrl: 'https://thsonu35.github.io/Dappr-a-react-wep-page/',
+    githubUrl: 'https://github.com/thsonu35/Dappr-a-react-wep-page'
+  },
+  {
+    title: 'Pocket-Notes',
+    description: 'This project helps to note down notes like a chatting app.',
+    imageUrl: 'https://th.bing.com/th/id/OIP.u1LI0kCEcS9YzlpO8GQnngHaHQ?w=554&h=543&rs=1&pid=ImgDetMain',
+    deployUrl: 'https://project1-omega-three.vercel.app/',
+    githubUrl: 'https://github.com/thsonu35/pocket-notes'
+  },
+  {
+    title: 'Pro-Manage',
+    description: 'This is a full Stack Project with backend and frontend.',
+    imageUrl: 'https://wallpaperaccess.com/full/8901756.jpg',
+    deployUrl: 'https://pro-manage-blush.vercel.app/',
+    githubUrl: 'https://github.com/thsonu35/Pro-Manage'
+  },
+  {
+    title: 'To be Continue...',
+    description: 'Working on project 5.',
+    imageUrl: 'https://wallpapercave.com/wp/wp1828903.png',
+    deployUrl: 'https://wallpapercave.com/wp/wp4769146.jpg',
+    githubUrl: ''
+  }
 ];
 
 const Projects = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const [fade, setFade] = useState(false); // Manage fade effect
-    const cardsPerPage = 4; // Number of cards to display per page
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [showTypewriter, setShowTypewriter] = useState(true);
+  const [showProjects, setShowProjects] = useState(false);
+  const projectsToShow = 3;
 
-    const handleNext = () => {
-      if (currentIndex + cardsPerPage < projects.length) {
-        setFade(true); // Start fade-out effect
-        setTimeout(() => {
-          setCurrentIndex(currentIndex + cardsPerPage);
-          setFade(false); // End fade effect
-        }, 500); // Duration of the fade-out animation
-      }
-    };
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + projectsToShow) % projects.length);
+  };
 
-    const handlePrevious = () => {
-      if (currentIndex > 0) {
-        setFade(true); // Start fade-out effect
-        setTimeout(() => {
-          setCurrentIndex(currentIndex - cardsPerPage);
-          setFade(false); // End fade effect
-        }, 500); // Duration of the fade-out animation
-      }
-    };
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? projects.length - projectsToShow : prevIndex - projectsToShow
+    );
+  };
 
-    const displayedProjects = projects.slice(currentIndex, currentIndex + cardsPerPage);
+  const handleCardDoubleClick = (url) => {
+    window.open(url, '_blank');
+  };
 
-    return (
-      <Element name="projects">
-        <section id="projects" className="projects-section">
-          <h2 className="section-title">My Projects</h2>
-          <div className={`projects-container ${fade ? 'fade-out' : ''}`}>
-            {displayedProjects.map((project, index) => (
-              <div key={index} className="project-card">
-                <img src={project.imageUrl} alt={project.title} className="project-image" />
-                <h3 className="project-title">{project.title}</h3>
-                <p className="project-description">{project.description}</p>
+  useEffect(() => {
+    if (!showTypewriter) {
+      setTimeout(() => {
+        setShowProjects(true);
+      }, 1000); // Delay before showing projects
+    }
+  }, [showTypewriter]);
+
+  return (
+    <Element name="projects" className="projects-section">
+                <h2 className="section-title">Projects</h2>
+
+      {showTypewriter && (
+        <div className="typewriter-container">
+          <Typewriter
+            options={{
+              strings: ['Double click on a project to see the deployment link', 'Click on GitHub to see the code'],
+              autoStart: true,
+              loop: true,
+              delay: 75,
+              deleteSpeed: 90,
+              pauseFor: 2000
+            }}
+            onInit={(typewriter) => {
+              typewriter
+                .pauseFor(2500)
+                .callFunction(() => {
+                  setShowTypewriter(false);
+                });
+            }}
+          />
+        </div>
+      )}
+      {showProjects && (
+        <>
+          <div className="projects-container">
+            {projects.slice(currentIndex, currentIndex + projectsToShow).map((project, index) => (
+              <div
+                key={index}
+                className="project-card"
+                onDoubleClick={() => handleCardDoubleClick(project.deployUrl)}
+              >
+                <img src={project.imageUrl} alt={project.title} />
+                <div className="content">
+                  <h3 className="title">{project.title}</h3>
+                  <p>{project.description}</p>
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="github-link"
+                      onClick={(e) => e.stopPropagation()} // Prevent card click when clicking on GitHub link
+                    >
+                      GitHub
+                    </a>
+                  )}
+                </div>
               </div>
             ))}
           </div>
           <div className="pagination-controls">
-  <button onClick={handlePrevious} disabled={currentIndex === 0}>Previous</button>
-  <button onClick={handleNext} disabled={currentIndex + cardsPerPage >= projects.length}>Next</button>
-</div>
-
-        </section>
-      </Element>
-    );
+            <button onClick={handlePrev} disabled={currentIndex === 0}>
+              Previous
+            </button>
+            <button onClick={handleNext} disabled={currentIndex + projectsToShow >= projects.length}>
+              Next
+            </button>
+          </div>
+        </>
+      )}
+    </Element>
+  );
 };
 
 export default Projects;

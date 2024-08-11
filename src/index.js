@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/main.css';
 import Layout from './components/Layout';
-import './index.css';
+// import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,48 +1,84 @@
 /* Home.css */
 .profile-container {
-    text-align: center;
-    padding: 50px;
-  }
-  
-  .profile-photo {
-    width: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-  }
-  
-  .typing-container {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .fade-in-card {
-    animation: fadeIn 1s ease-in-out;
-    margin-top: 20px;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  .download-cv-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  .download-cv-button:hover {
-    background-color: #0056b3;
-  }
+  text-align: center;
+  padding: 20px;
+}
 
-  h3{
-    color:blue;
+.profile-photo {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.typing-container {
+  font-size: 50px; /* Adjust the font size here */
+  margin-bottom: 20px;
+}
+
+.fade-in-card {
+  animation: fadeIn 1s ease-in-out;
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
+  to {
+    opacity: 1;
+  }
+}
+
+.download-cv-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.download-cv-button:hover {
+  background-color: #0056b3;
+}
+
+h3 {
+  color: blue; /* Example style for h3 */
+  font-size: 42px;
+}
+
+.fade-in-card p {
+  font-size: 30px; /* Adjust the font size of the paragraph */
+  line-height: 1.6; /* Example line height adjustment */
+  /* Add any other styles as needed */
+}
+
+.social-links {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 200px; /* Increased space between icons */
+}
+
+.social-icon {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  border-radius: 10px; /* Border radius */
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.typing-container-second {
+  font-size: 30px; /* Adjust the font size for the second Typewriter */
+  color: var(--heading-color); /* Color changes according to dark mode */
+  margin-bottom: 20px;
+}
+
+/* Dark mode specific styles */
+[data-theme="dark"] .typing-container-second {
+  color: #ff0058; /* Red color in dark mode */
+}

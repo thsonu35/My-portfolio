@@ -1,30 +1,32 @@
 /* Define default colors */
 :root {
-    --bg-color: #fff; /* Default light background */
-    --text-color: #000; /* Default text color */
-    --heading-color: #000; /* Default heading color */
-    --button-bg-color: #333; /* Default button background */
-    --button-hover-color: #1abc9c; /* Default button hover color */
-  }
-  
-  /* Dark mode colors */
-  [data-theme="dark"] {
-    --bg-color: #333;
-    --text-color: #1abc9c; /* Dark blue for text */
-    --heading-color: #ff0058; /* Dark red for headings */
-    --button-bg-color: #333;
-    --button-hover-color: #1abc9c;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-  }
+  --bg-color: #fff; /* Default light background */
+  --text-color: #000; /* Default text color */
+  --heading-color: #000; /* Default heading color */
+  --button-bg-color: #333; /* Default button background */
+  --button-hover-color: #1abc9c; /* Default button hover color */
+  --input-bg-color: #fff; /* White input box background */
+}
+
+/* Dark mode colors */
+[data-theme="dark"] {
+  --bg-color: #333;
+  --text-color: #1abc9c; /* Dark blue for text */
+  --heading-color: #ff0058; /* Dark red for headings */
+  --button-bg-color: #333;
+  --button-hover-color: #1abc9c;
+  --input-bg-color: #444; /* Dark input box background */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
   
   nav {
     display: flex;
@@ -71,9 +73,9 @@
   }
   
   .section {
-    padding: 100px 20px;
+    padding: 60px 30px;
     text-align: center;
-    min-height: 100vh;
+    min-height: 80vh;
     background: var(--bg-color);
     transition: background 1s ease, color 1s ease;
   }

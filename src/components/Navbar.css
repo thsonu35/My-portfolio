@@ -1,0 +1,113 @@
+/* Navbar container */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: var(--button-bg-color); /* Navbar background color */
+    padding: 20px 30px; /* Padding for spacing */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    margin: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for better separation */
+    transition: background 0.3s ease; /* Smooth background transition */
+  }
+  
+  /* Navbar list */
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar items alignment */
+  .left-nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Navbar item styling */
+  nav ul li {
+    margin: 0 15px;
+    position: relative; /* To position hover effects */
+  }
+  
+  /* Navbar links */
+  nav ul li a {
+    color: var(--text-color); /* Text color for links */
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color transition and scaling */
+  }
+  
+  /* Hover effect for links */
+  nav ul li a:hover {
+    color: var(--heading-color); /* Hover color */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+  
+  /* Dark mode toggle button */
+  #dark-mode-toggle {
+    padding: 10px 20px;
+    background-color: var(--button-bg-color); /* Toggle button background color */
+    color: var(--text-color); /* Text color for toggle button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease; /* Smooth background transition */
+  }
+  
+  /* Dark mode toggle button hover effect */
+  #dark-mode-toggle:hover {
+    background-color: var(--button-hover-color); /* Hover background color */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    nav {
+      padding: 20px 15px; /* Adjust padding for smaller screens */
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 10px 0; /* Adjust margin for vertical layout */
+    }
+  }
+  
+  /* Light mode specific styles */
+  [data-theme="light"] {
+    nav {
+      background: var(--button-bg-color); /* Light mode navbar background color */
+    }
+  
+    nav ul li a {
+      color: var(--text-color); /* Light mode text color for links */
+    }
+  
+    nav ul li a:hover {
+      color: var(--heading-color); /* Light mode hover color */
+    }
+  }
+  
+  /* Dark mode specific styles */
+  [data-theme="dark"] {
+    nav {
+      background: var(--button-bg-color); /* Dark mode navbar background color */
+    }
+  
+    nav ul li a {
+      color: var(--text-color); /* Dark mode text color for links */
+    }
+  
+    nav ul li a:hover {
+      color: var(--heading-color); /* Dark mode hover color */
+    }
+  }
+  

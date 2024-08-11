@@ -1,7 +1,5 @@
 .projects-section {
   padding: 100px 20px;
-  /* background: #333; Dark background */
-  /* color: white; */
   text-align: center; /* Center-align content */
   position: relative; /* For background effects */
   overflow: hidden; /* Ensure background elements don’t overflow */
@@ -10,7 +8,6 @@
 .section-title {
   font-size: 2.5em;
   margin-bottom: 60px;
-  /* color: wheat; Highlight color */
 }
 
 .projects-container {
@@ -122,59 +119,16 @@
   font-size: 0.70em;
 }
 
-.content .sci {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  margin-top: 5px;
-}
-
-.sci li {
-  list-style: none;
-}
-
-.sci li a {
-  position: relative;
+.github-link {
+  display: none;
+  color: #ff0058;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.5);
-  background: rgba(0, 0, 0, 0.2);
-  fill: currentColor;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  transition: color 0.5s ease, fill 0.5s ease;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
-.sci li a:hover {
-  color: rgba(255, 255, 255, 1);
-  fill: rgba(255, 255, 255, 1); /* Ensure fill color matches text color on hover */
-}
-
-/* Styling for the Next button */
-.next-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #03a9f4; /* Button color */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.3s ease;
-  margin-top: 20px; /* Space above the button */
-}
-
-.next-button:hover {
-  background: #ff0058; /* Button hover color */
-  transform: scale(1.05); /* Slightly enlarge button on hover */
-}
-
-.next-button:focus {
-  outline: none; /* Remove default focus outline */
+.project-card:hover .github-link {
+  display: block; /* Show the GitHub link on hover */
 }
 
 .pagination-controls {

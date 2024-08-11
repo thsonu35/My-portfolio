@@ -1,0 +1,74 @@
+.about-container {
+    padding: 50px;
+    background-color: var(--bg-color); /* Use variable for background color */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    margin: 0 auto;
+    border: 2px solid var(--text-color); /* Border around the entire container */
+  }
+  
+  .section-title {
+    font-size: 2.5em; /* Increased font size */
+    margin-bottom: 10px;
+    color: var(--heading-color); /* Use variable for text color */
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Light border with shadow effect */
+    padding: 10px; /* Adjust padding if needed */
+    border-radius: 4px; /* Rounded corners for the border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  }
+  
+  .section-subtitle {
+    font-size: 2em; /* Increased font size */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: var(--text-color); /* Use variable for text color */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border with shadow effect */
+    padding: 5px; /* Adjust padding if needed */
+    border-radius: 4px; /* Rounded corners for the border */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  
+  .about-text {
+    font-size: 1.2em; /* Increased font size */
+    line-height: 1.6;
+    color: var(--text-color); /* Use variable for text color */
+  }
+  
+  .internship-title {
+    font-size: 1.5em; /* Increased font size */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--text-color); /* Use variable for text color */
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+    color: var(--text-color); /* Use variable for text color */
+    font-size: 1.2em; /* Increased font size for list items */
+  }
+  
+  /* Optional Matrix-inspired background effect */
+  .about-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%);
+    opacity: 0.3;
+    z-index: -1;
+    pointer-events: none;
+    animation: matrixEffect 20s linear infinite;
+  }
+  
+  @keyframes matrixEffect {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 100%; }
+  }
+  

@@ -28,10 +28,6 @@ const Navbar = () => {
         <li><Link to="skills" smooth={true}>Skills</Link></li>
         <li><Link to="contact" smooth={true}>Contact</Link></li>
       </ul>
-      <ul className="right-nav">
-        <li><a href="#sign-in">Sign In</a></li>
-        <li><a href="#sign-up">Sign Up</a></li>
-      </ul>
     </nav>
   );
 };
