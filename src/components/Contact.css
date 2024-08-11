@@ -1,88 +1,88 @@
 .contact-title {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: var(--heading-color);
-  }
-  
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--bg-color);
-    padding: 2em;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s, box-shadow 0.3s;
-  }
-  
-  .contact-form:hover {
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-  }
-  
-  .form-group {
-    width: 100%;
-    max-width: 600px;
-    margin-bottom: 15px;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 1.1em;
-    color: var(--text-color);
-  }
-  
-  .form-group input,
-  .form-group textarea {
-    width: 100%;
-    padding: 12px;
-    border: 2px solid var(--text-color);
-    border-radius: 5px;
-    background-color: var(--input-bg-color);
-    color: var(--text-color);
-    font-size: 1em;
-    transition: border-color 0.3s, background-color 0.3s;
-  }
-  
-  .form-group input:focus,
-  .form-group textarea:focus {
-    border-color: var(--heading-color);
-    outline: none;
-  }
-  
-  .submit-button {
-    padding: 10px 20px;
-    background-color: var(--button-bg-color);
-    color: var(--button-text-color);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.2em;
-    transition: background-color 0.3s, transform 0.3s;
-  }
-  
-  .submit-button:hover {
-    background-color: var(--button-hover-color);
-    transform: scale(1.05);
-  }
-  
-  /* Adding Matrix-inspired background effect */
-  .contact-form::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%);
-    opacity: 0.5;
-    z-index: -1;
-    pointer-events: none;
-    animation: matrixEffect 20s linear infinite;
-  }
-  
-  @keyframes matrixEffect {
-    0% { background-position: 0 0; }
-    100% { background-position: 0 100%; }
-  }
-  
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: var(--heading-color);
+}
+
+.contact-form {
+  position: relative; /* Ensure the Matrix effect stays behind the form content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-color);
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.1em;
+  color: var(--text-color);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid var(--text-color);
+  border-radius: 5px;
+  background-color: var(--input-bg-color);
+  color: var(--text-color);
+  font-size: 1em;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--heading-color);
+  outline: none;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-button:hover {
+  background-color: var(--button-hover-color);
+  transform: scale(1.05);
+}
+
+/* Matrix-inspired background effect */
+.contact-form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+  opacity: 0.5;
+  z-index: -1;
+  pointer-events: none;
+  animation: matrixEffect 20s linear infinite;
+}
+
+@keyframes matrixEffect {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 100%; }
+}

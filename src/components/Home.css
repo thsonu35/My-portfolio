@@ -1,4 +1,3 @@
-/* Home.css */
 .profile-container {
   text-align: center;
   padding: 20px;
@@ -13,6 +12,17 @@
 .typing-container {
   font-size: 50px; /* Adjust the font size here */
   margin-bottom: 20px;
+}
+
+.typing-container-second {
+  font-size: 30px; /* Adjust the font size for the second Typewriter */
+  color: var(--heading-color); /* Color changes according to dark mode */
+  margin-bottom: 20px;
+}
+
+/* Dark mode specific styles */
+[data-theme="dark"] .typing-container-second {
+  color: #ff0058; /* Red color in dark mode */
 }
 
 .fade-in-card {
@@ -37,10 +47,12 @@
   color: white;
   text-decoration: none;
   border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth background and transform transition */
 }
 
 .download-cv-button:hover {
   background-color: #0056b3;
+  transform: scale(1.05); /* Slight scale on hover */
 }
 
 h3 {
@@ -51,7 +63,7 @@ h3 {
 .fade-in-card p {
   font-size: 30px; /* Adjust the font size of the paragraph */
   line-height: 1.6; /* Example line height adjustment */
-  /* Add any other styles as needed */
+  margin-bottom: 20px; /* Added margin for spacing */
 }
 
 .social-links {
@@ -65,20 +77,31 @@ h3 {
   width: 100px; /* Adjust size as needed */
   height: 100px; /* Adjust size as needed */
   border-radius: 10px; /* Border radius */
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transform and shadow transition */
 }
 
 .social-icon:hover {
   transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow effect on hover */
 }
 
-.typing-container-second {
-  font-size: 30px; /* Adjust the font size for the second Typewriter */
-  color: var(--heading-color); /* Color changes according to dark mode */
-  margin-bottom: 20px;
-}
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .typing-container {
+    font-size: 40px; /* Adjust font size for smaller screens */
+  }
 
-/* Dark mode specific styles */
-[data-theme="dark"] .typing-container-second {
-  color: #ff0058; /* Red color in dark mode */
+  .typing-container-second {
+    font-size: 24px; /* Smaller font size for the second Typewriter on mobile */
+  }
+
+  .social-links {
+    flex-direction: column;
+    gap: 50px; /* Reduced gap for smaller screens */
+  }
+
+  .social-icon {
+    width: 80px; /* Smaller icon size for mobile */
+    height: 80px; /* Smaller icon size for mobile */
+  }
 }
