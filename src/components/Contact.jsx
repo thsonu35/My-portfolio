@@ -11,6 +11,7 @@ const Contact = () => {
     name: '',
     email: '',
     message: '',
+    contactNo: '',  // Added contact number field
   });
 
   const handleChange = (e) => {
@@ -30,7 +31,7 @@ const Contact = () => {
       return;
     }
 
-    // Send the main contact email to your email
+    // Send the main contact email
     emailjs.send(
       'service_2zj4gmj',  // Replace with your EmailJS service ID
       'template_aprqzue', // Replace with your main template ID
@@ -39,25 +40,7 @@ const Contact = () => {
     ).then(
       (result) => {
         console.log('Email successfully sent!', result.text);
-        toast.success('Your message has been sent successfully!');
-        
-        // Send the auto-reply email to the user
-        emailjs.send(
-          'service_2zj4gmj',  // Replace with your EmailJS service ID
-          'template_znv3dt9', // Replace with your auto-reply template ID
-          {
-            name: formData.name,
-            email: formData.email,
-          },
-          'hHes5PjkJNLaf3qWt' // Replace with your EmailJS Public Key
-        ).then(
-          (result) => {
-            console.log('Auto-reply successfully sent!', result.text);
-          },
-          (error) => {
-            console.log('Failed to send the auto-reply. Error:', error.text);
-          }
-        );
+        toast.success('Thank you for contacting me. I will connect with you as soon as possible!');
       },
       (error) => {
         console.log('Failed to send the email. Error:', error.text);
@@ -65,7 +48,7 @@ const Contact = () => {
       }
     );
 
-    setFormData({ name: '', email: '', message: '' });
+    setFormData({ name: '', email: '', message: '', contactNo: '' });
   };
 
   return (
@@ -93,6 +76,16 @@ const Contact = () => {
               value={formData.email}
               onChange={handleChange}
               required
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="contactNo">Contact No.:</label>
+            <input
+              type="text"
+              id="contactNo"
+              name="contactNo"
+              value={formData.contactNo}
+              onChange={handleChange}
             />
           </div>
           <div className="form-group">
