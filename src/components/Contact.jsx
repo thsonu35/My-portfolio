@@ -30,26 +30,26 @@ const Contact = () => {
       return;
     }
 
-    // Send the main contact email
+    // Send the main contact email to your email
     emailjs.send(
-      'service_2zj4gmj',  // Replace with your service ID
+      'service_2zj4gmj',  // Replace with your EmailJS service ID
       'template_aprqzue', // Replace with your main template ID
       formData,
-      'hHes5PjkJNLaf3qWt'   // Replace with your Public Key
+      'hHes5PjkJNLaf3qWt' // Replace with your EmailJS Public Key
     ).then(
       (result) => {
         console.log('Email successfully sent!', result.text);
         toast.success('Your message has been sent successfully!');
         
-        // Send the auto-reply email
+        // Send the auto-reply email to the user
         emailjs.send(
-          'service_2zj4gmj',  // Replace with your service ID
+          'service_2zj4gmj',  // Replace with your EmailJS service ID
           'template_znv3dt9', // Replace with your auto-reply template ID
           {
             name: formData.name,
             email: formData.email,
           },
-          'hHes5PjkJNLaf3qWt'   // Replace with your Public Key
+          'hHes5PjkJNLaf3qWt' // Replace with your EmailJS Public Key
         ).then(
           (result) => {
             console.log('Auto-reply successfully sent!', result.text);
