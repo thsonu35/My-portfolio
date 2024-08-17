@@ -80,7 +80,7 @@ const Home = () => {
           )}
           {isTypingDone && (
             <a
-              href="/path/to/cv.pdf"
+              href="https://drive.usercontent.google.com/download?id=1qrJ-w16KWgOevMRV_F_Ah1OG2ju8X45x&export=download&authuser=0&confirm=t&uuid=9a2b2bbd-a1d4-4c12-8318-d4a91718e240&at=APZUnTXW-9dMzc2tRV58cERGeKZK:1723923925664"
               download="Sohan_CV.pdf"
               className="download-cv-button"
             >
