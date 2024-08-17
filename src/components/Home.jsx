@@ -80,7 +80,7 @@ const Home = () => {
           )}
           {isTypingDone && (
             <a
-              href="https://drive.usercontent.google.com/download?id=1qrJ-w16KWgOevMRV_F_Ah1OG2ju8X45x&export=download&authuser=0&confirm=t&uuid=9a2b2bbd-a1d4-4c12-8318-d4a91718e240&at=APZUnTXW-9dMzc2tRV58cERGeKZK:1723923925664"
+              href="https://export-download.canva.com/nRIhM/DAGOI2nRIhM/21/0-7933528507150622728.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20240817%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240817T092139Z&X-Amz-Expires=44903&X-Amz-Signature=51b3ca0140d6112e0db29109772962b3f5932c3d9435a18081df20bdec2ec89a&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27Sohan%2520Thakur%2520resume%2520%25281%2529.pdf.pdf&response-expires=Sat%2C%2017%20Aug%202024%2021%3A50%3A02%20GMT"
               download="Sohan_CV.pdf"
               className="download-cv-button"
             >
