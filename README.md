@@ -1,8 +1,8 @@
-# 👋 Welcome to Vishal Sharma's GitHub Profile!
+# 👋 Welcome to Sohan's GitHub Profile!
 
-## 🚀 About Me
+## About Me
 
-Hi there! I'm Vishal Sharma, a passionate web developer with a strong focus on **MERN** stack and **Python Django**. I love building dynamic and engaging web applications and exploring the world of technology.
+Hi there! I'm Sohan, a passionate web developer with a strong focus on **MERN** stack and **Python Django**. I love building dynamic and engaging web applications and exploring the world of technology.
 
 - 💻 **Tech Stack:**
   - **Frontend:** React, HTML, CSS
@@ -10,31 +10,42 @@ Hi there! I'm Vishal Sharma, a passionate web developer with a strong focus on *
   - **Database:** MongoDB, SQL
 
 - 🌐 **Links:**
-  - [LinkedIn](https://linkedin.com/in/vishal-sharma/)
-  - [Portfolio](#) <!-- Link to your portfolio website -->
-  - [Email](mailto:vs1015242@gmail.com)
+  - [LinkedIn](https://www.linkedin.com/in/sohan--thakur/)
+  - [Portfolio](https://sohan-singh-thakur.onrender.com/) <!-- Link to your portfolio website -->
+  
 
 ## 🛠️ Projects
 
-### 📚 Task Manager
-An efficient task management system where you can create, update, and organize tasks with ease. [Explore Project](#) <!-- Link to your project -->
+### 📚 Dappr-a-React-Web-Page
+An HTML-based React web page. [Explore Project](https://thsonu35.github.io/Dappr-a-react-wep-page/) <!-- Link to your project -->
 
-### 🍽️ Personalized Diet Planner
-A smart diet planner that provides personalized recommendations based on your weight, goals, and activity levels. [Explore Project](#) <!-- Link to your project -->
+### 📊 Pro-Manage
+A project focused on JavaScript. [Explore Project](https://pro-manage-blush.vercel.app/dashboard) <!-- Link to your project -->
 
-### 🎨 Portfolio Website
-A visually appealing portfolio website showcasing my work and skills with a dark and cyber-themed aesthetic. [Explore Project](#) <!-- Link to your project -->
+### 🧮 My-Calculater
+A responsive calculator built with HTML. [Explore Project](https://thsonu35.github.io/My-Calculater/) <!-- Link to your project -->
+
+### 📓 Pocket-Notes
+A JavaScript-based note-taking application. [Explore Project](https://project1-omega-three.vercel.app/) <!-- Link to your project -->
+
+### 🖥️ HTML-CSS-PROJECT
+Check out the site from this link: [Explore Project](https://thsonu35.github.io/HTML-CSS-PROJECT/index.html) <!-- Link to your project -->
 
 ## 📈 Stats
 
-![Vishal's GitHub Stats](https://github-readme-stats.vercel.app/api?username=vishal-sharma&show_icons=true&hide_title=true&count_private=true&hide=prs&hide_border=true&bg_color=0d1117&text_color=c9d1d9&icon_color=79c0ff)
+![Sohan's GitHub Stats](https://github-readme-stats.vercel.app/api?username=sohan&show_icons=true&hide_title=true&count_private=true&hide=prs&hide_border=true&bg_color=0d1117&text_color=c9d1d9&icon_color=79c0ff)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=vishal-sharma&layout=compact&hide_border=true&bg_color=0d1117&text_color=c9d1d9&icon_color=79c0ff)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=sohan&layout=compact&hide_border=true&bg_color=0d1117&text_color=c9d1d9&icon_color=79c0ff)
 
 ## 🎨 Technologies & Tools
 
-```plaintext
-- React, Node.js, Express.js
-- Django, Python
-- MongoDB, SQL
-- HTML, CSS
+- **React, Node.js, Express.js**
+- **Django, Python**
+- **MongoDB, SQL**
+- **HTML, CSS**
+
+## 📬 Let's Connect!
+
+Feel free to reach out to me via [My-portfolio](https://sohan-singh-thakur.onrender.com/) or connect with me on [LinkedIn](https://www.linkedin.com/in/sohan--thakur/).
+
+Thanks for stopping by! 🚀
