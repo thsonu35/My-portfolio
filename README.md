@@ -1,7 +1,7 @@
 # 👋 Welcome to Vishal Sharma's GitHub Profile!
 
 <div style="text-align: center;">
-  <h1>Hi there! I'm Vishal Sharma</h1>
+  <h1>Hi there! I'm Sohan Thakur</h1>
   <p>Passionate web developer with a strong focus on <strong>MERN</strong> stack and <strong>Python Django</strong>. I love building dynamic and engaging web applications and exploring the world of technology.</p>
   
   <p>💻 <strong>Tech Stack:</strong></p>
