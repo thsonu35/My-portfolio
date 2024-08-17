@@ -63,7 +63,7 @@ const Home = () => {
               </div>
               <div className="social-links">
                 <a href="https://github.com/thsonu35" target="_blank" rel="noopener noreferrer">
-                  <img src="https://static-00.iconduck.com/assets.00/github-icon-1024x1024-vu0m1lvh.png" alt="GitHub" className="social-icon" />
+                  <img src="https://th.bing.com/th/id/R.78800bdb23a011708fe5df5af576f7f2?rik=xHS79jmWkuKg%2bQ&riu=http%3a%2f%2fwww.micahthompkins.com%2fpngs%2fgithub-3.png&ehk=i2mMfQElkWDPPKzFO2TyYS46I1A2k2U6nLXT6drw71g%3d&risl=&pid=ImgRaw&r=0" alt="GitHub" className="social-icon" />
                 </a>
                 <a href="https://www.linkedin.com/in/sohan--thakur/" target="_blank" rel="noopener noreferrer">
                   <img src="https://th.bing.com/th/id/OIP.WLPT--aZGa6JTSBjv0RYaAHaHe?w=507&h=512&rs=1&pid=ImgDetMain" alt="LinkedIn" className="social-icon" />
