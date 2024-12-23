@@ -13,6 +13,10 @@ const Skills = () => (
           <h3 className="skills-subtitle">Frontend</h3>
           <ul className="skills-list">
             <li className="skill-item">
+              <i className="fab fa-js skill-icon"></i>
+              <span>React.Js</span>
+            </li>
+            <li className="skill-item">
               <i className="fab fa-html5 skill-icon"></i>
               <span>HTML</span>
             </li>
@@ -39,11 +43,11 @@ const Skills = () => (
             </li>
             <li className="skill-item">
               <i className="fab fa-python skill-icon"></i>
-              <span>Python</span>
+              <span>Ruby</span>
             </li>
             <li className="skill-item">
               <i className="fab fa-python skill-icon"></i>
-              <span>Django</span>
+              <span>Ruby on Rails</span>
             </li>
           </ul>
         </div>
@@ -77,7 +81,7 @@ const Skills = () => (
             </li>
             <li className="skill-item">
               <i className="fab fa-heroku skill-icon"></i>
-              <span>Render</span>
+              <span>Jira</span>
             </li>
             <li className="skill-item">
               <i className="fab fa-heroku skill-icon"></i>
