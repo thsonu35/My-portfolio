@@ -9,7 +9,7 @@ const Home = () => {
   const [isTypingDone, setIsTypingDone] = useState(false);
 
   const handleType = (count) => {
-    const words = ["Interested in Cyber Security", "I am a Tech student", "I am a Web Developer"];
+    const words = ["I am a Web Developer"];
     if (words[count] === "I am a Web Developer") {
       setShowCard(true);
     }
@@ -43,9 +43,9 @@ const Home = () => {
           {showCard && (
             <div className="fade-in-card">
               <p>
-                👋 Greetings! I'm Sohan, a passionate MERN and Python Developer with a love for turning ideas into reality through clean and efficient code.
-                Driven by a curiosity to solve problems and a love for elegant solutions, I specialize in Full Stack Web development using Python and MERN. My approach is rooted in a commitment to writing code that is not only functional but also maintainable and scalable.
-              </p>
+👋 Greetings! I'm Sohan, a seasoned MERN Stack and Python Developer with 5 years of experience transforming ideas into reality through clean, efficient, and scalable code.
+
+Driven by a passion for solving complex problems and crafting elegant solutions, I specialize in Full Stack Web Development using the MERN Stack and Python. My development philosophy centers on delivering maintainable, robust, and high-performance applications, ensuring seamless user experiences while meeting business objectives effectively.              </p>
             </div>
           )}
           {isTypingDone && (
