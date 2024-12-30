@@ -52,7 +52,7 @@ const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showTypewriter, setShowTypewriter] = useState(true);
   const [showProjects, setShowProjects] = useState(false);
-  const projectsToShow = 3;
+  const projectsToShow = 6;
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + projectsToShow) % projects.length);
@@ -88,7 +88,7 @@ const Projects = () => {
               autoStart: true,
               loop: true,
               delay: 5,
-              deleteSpeed: 90,
+              deleteSpeed: 100,
               pauseFor: 200
             }}
             onInit={(typewriter) => {
