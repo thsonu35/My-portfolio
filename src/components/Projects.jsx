@@ -33,6 +33,13 @@ const projects = [
     githubUrl: 'https://github.com/thsonu35/Pro-Manage'
   },
   {
+    title: 'Ai-Boss-chatbot',
+    description: 'Working on Ai-boss chatbot',
+    imageUrl: 'https://static.vecteezy.com/system/resources/previews/017/736/844/non_2x/big-boss-illustration-free-vector.jpg',
+    deployUrl: 'https://wallpapercave.com/wp/wp4769146.jpg',
+    githubUrl: 'https://github.com/thsonu35/Ai-Powered-Chatbot'
+  },
+  {
     title: 'To be Continue...',
     description: 'Working on project 5.',
     imageUrl: 'https://wallpapercave.com/wp/wp1828903.png',
