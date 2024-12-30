@@ -80,13 +80,13 @@ const Projects = () => {
               strings: ['Double click on a project to see the deployment link', 'Click on GitHub to see the code'],
               autoStart: true,
               loop: true,
-              delay: 75,
+              delay: 5,
               deleteSpeed: 90,
-              pauseFor: 2000
+              pauseFor: 200
             }}
             onInit={(typewriter) => {
               typewriter
-                .pauseFor(2500)
+                .pauseFor(200)
                 .callFunction(() => {
                   setShowTypewriter(false);
                 });
