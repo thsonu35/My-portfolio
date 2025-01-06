@@ -52,7 +52,7 @@ const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showTypewriter, setShowTypewriter] = useState(true);
   const [showProjects, setShowProjects] = useState(false);
-  const projectsToShow = 6;
+  const projectsToShow = 3;
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + projectsToShow) % projects.length);
