@@ -43,10 +43,11 @@ const Home = () => {
           {showCard && (
             <div className="fade-in-card">
               <p>
-👋 Greetings! I'm Sohan, a seasoned MERN Stack and Python Developer with 5 years of experience transforming ideas into reality through clean, efficient, and scalable code.
+I am a passionate Software Engineer with experience in Python, JavaScript, React, HTML, and CSS. I worked as a Developer at BestPeers from August to March, where I built dynamic and responsive web applications.
 
-Driven by a passion for solving complex problems and crafting elegant solutions, I specialize in Full Stack Web Development using the MERN Stack and Python. My development philosophy centers on delivering maintainable, robust, and high-performance applications, ensuring seamless user experiences while meeting business objectives effectively.              </p>
-            </div>
+I have also developed Pro Manage, a MERN stack-based to-do list productivity tool designed to enhance task management and workflow efficiency. I am always eager to learn new technologies and improve my skills in full-stack development.
+
+I strive to write clean, maintainable code and create user-friendly applications that provide a great experience.    </div>
           )}
           {isTypingDone && (
             <>
